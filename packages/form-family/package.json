@@ -1,0 +1,12 @@
+{
+  "name": "@you-want/form-family",
+  "files": ["dist"],
+  "main": "./dist/form-family.umd.js",
+  "module": "./dist/form-family.es.js",
+  "exports": {
+    ".": {
+      "import": "./dist/form-family.es.js",
+      "require": "./dist/form-family.umd.js"
+    }
+  }
+}
