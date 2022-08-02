@@ -1,0 +1,27 @@
+
+## npm
+npm-debug.log
+node_modules
+
+/.*
+debug/
+
+build/
+config/
+
+## docs
+docs/
+examples/
+
+# jest
+coverage/
+test-storage*
+test/
+__mocks__/
+jestEnvironment.js
+test/jest.e2e.config.js
+test/jest.config.functional.js
+jest.config.unit.js
+# tlint & typescript
+tsconfig.json
+tslint.json

@@ -1,0 +1,27 @@
+{
+  "name": "@you-want/pull-cli",
+  "version": "0.0.3",
+  "author": "Rain9",
+  "license": "MIT",
+  "private": false,
+  "description": "",
+  "main": "index.js",
+  "bin": {
+    "pull-cli": "./bin/index.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "chalk": "^2.4.2",
+    "commander": "^2.19.0",
+    "download": "^7.1.0",
+    "handlebars": "^4.1.1",
+    "inquirer": "^6.2.2",
+    "log-symbols": "^2.2.0",
+    "ora": "^3.2.0",
+    "rimraf": "^2.6.3",
+    "shelljs": "^0.8.3"
+  },
+  "devDependencies": {}
+}
