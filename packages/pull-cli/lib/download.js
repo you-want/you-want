@@ -21,10 +21,13 @@ function download(repo, dest, opts, fn) {
     var clone = opts.clone || false
     var type = opts.type || 'https'
     repo = normalize(repo)
+    console.log(2222, repo, type, opts.type, typeof opts.type);
     var url = repo.url || getUrl(repo, clone)
+    console.log(3333, repo);
     if (clone) {
-        console.log(url, clone, dest, repo, fn)
+        console.log(1111, type, url, clone, dest, repo, fn)
         if (type == 'https') {
+            console.log(5555, url, clone, dest, repo, fn)
             gitclonehttp(url, clone, dest, repo, fn)
         } else {
             gitclonessh(url, clone, dest, repo, fn)
@@ -152,6 +155,7 @@ function getUrl(repo, clone, type) {
     // Get origin with protocol and add trailing slash or colon (for ssh)
     if (type) {
         origin = addProtocol(repo.gurl, false).replace(/:/g, '/').replace(/https\//, 'https:')
+        console.log(6666, origin);
     } else {
         origin = addProtocol(repo.origin, true)
         if (/^git\@/i.test(origin))
@@ -162,6 +166,7 @@ function getUrl(repo, clone, type) {
     // Build url
     if (clone) {
         url = type ? origin + '.git' : origin + repo.owner + '/' + repo.name + '.git'
+        console.log(7777, url);
     } else {
         if (repo.type === 'github')
             url = origin + repo.owner + '/' + repo.name + '/archive/' + repo.checkout + '.zip'

@@ -11,10 +11,12 @@ const shell = require('shelljs')
 const download = require('./download')
 
 module.exports = function (params) {
+
+    console.log(44444, params)
     spinner = ora('\n 开始生成项目，请等待......');
     spinner.start();
     try {
-        download('https://github.com/you-want/vue3-cloud-admin', params.name, {
+        download('https://github.com:you-want/vue3-cloud-admin', params.name, {
             clone: true,
             type: params.type
         }, (error) => {

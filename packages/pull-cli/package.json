@@ -1,6 +1,6 @@
 {
   "name": "@you-want/pull-cli",
-  "version": "0.0.3",
+  "version": "0.0.5",
   "author": "Rain9",
   "license": "MIT",
   "private": false,
@@ -12,6 +12,10 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/you-want/you-want.git"
+  },
   "dependencies": {
     "chalk": "^2.4.2",
     "commander": "^2.19.0",
@@ -21,7 +25,7 @@
     "log-symbols": "^2.2.0",
     "ora": "^3.2.0",
     "rimraf": "^2.6.3",
-    "shelljs": "^0.8.3"
+    "shelljs": "^0.8.5"
   },
   "devDependencies": {}
 }
